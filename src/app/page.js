@@ -1,10 +1,13 @@
 import Image from 'next/image'
-import portada from '../../public/img/portada.jpg'
+import galeria1 from '../../public/img/origin.jpg'
+import galeria2 from '../../public/img/fondos-02.jpg'
+import galeria3 from '../../public/img/fondos-03.jpg'
+import galeria4 from '../../public/img/fondos-04.jpg'
 import anillos from '../../public/img/icono-anillos.svg'
 import fiesta from '../../public/img/icono-fiesta.svg'
 import Countdown from './components/Countdown/Countdown'
 import Link from 'next/link'
-import { Button } from 'flowbite-react'
+import { Button, Carousel } from 'flowbite-react'
 
 
 
@@ -12,14 +15,18 @@ import { Button } from 'flowbite-react'
 export default function Home() {
   return (
     <main>
-      <section>
+      <header>
         <div className='containerPortada'>
-          <Image className='w-full min-w-256 h-screen' src={portada} alt="imagen de portada" priority />
+          {/* <Image className='w-full min-w-256 h-screen' src={portada} alt="imagen de portada" priority /> */}
+          <h1 className='hidden'>Shei y Lucas</h1>
+          <h2 className='hidden'>¡Nos Casamos!</h2>
         </div>
-      </section>
-      <section id='countdown' className='w-full p-6 flex flex-col justify-center items-center '>
+      </header>
+
+      <section id='countdown' className='containerSection p-6'>
         <Countdown />
       </section>
+
       <section id='cards' className='w-full p-6 grid grid-cols-1 sm:grid-cols-2 gap-6'>
 
         <div id='card' className='flex flex-col items-center bg-slate-200 rounded shadow-lg p-3'>
@@ -54,6 +61,16 @@ export default function Home() {
           <iframe className='hidden lg:block m-3 border-0' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7971.807768906182!2d-60.76614590963856!3d-32.85233926286167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b651e73eac728b%3A0x96d38fa9f42ccf70!2sCampos%20de%20Ibarlucea.!5e0!3m2!1ses-419!2sar!4v1705896727917!5m2!1ses-419!2sar" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
+      </section>
+      <section id='carrusel' className='m-6'>
+        <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+          <Carousel>
+            <Image className='w-full'src={galeria1} alt="galeria" />
+            <Image className='w-full'src={galeria2} alt="..." />
+            <Image className='w-full'src={galeria3} alt="..." />
+            <Image className='w-full'src={galeria4} alt="..." />
+          </Carousel>
+        </div>
       </section>
     </main>
   )
