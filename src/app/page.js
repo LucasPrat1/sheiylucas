@@ -73,7 +73,7 @@ export default function Home() {
 
       </section>
 
-      <section id='carrusel' className='mx-10 mb-14 mt-6'>
+      <section id='carrusel' className='mx-6 lg:mx-16 my-6'>
         <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
           <Carousel>
             <Image className='w-full' src={galeria1} alt="galeria" />
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id='asistencia' className='containerSection px-6 pb-6 bg-slate-300 '>
+      <section id='asistencia' className='containerSection px-6 pb-6 bg-slate-300 shadow-inner'>
         <Image src={calendario} alt="icono calendario" />
         <h3 className='title sm:text-5xl xl:text-7xl'>Confirmanos tu asistencia</h3>
         <p className='text-center text-base sm:text-xl xl:text-2xl p-2 mb-2' >
@@ -98,7 +98,7 @@ export default function Home() {
       </section>
 
 
-      <section id='tips' className='containerSection p-6 bg-slate-300 '>
+      <section id='tips' className='containerSection p-6 bg-slate-300'>
         <h3 className='title sm:text-5xl xl:text-7xl'>¡Fiesta!</h3>
         <p className='text-center text-base sm:text-xl xl:text-2xl p-2' >
           Hagamos juntos una fiesta inolvidable. Te dejamos algunos tips
@@ -107,34 +107,34 @@ export default function Home() {
         <div className='w-full p-6 grid grid-cols-1 sm:grid-cols-3 gap-6' >
 
           <div className='flex flex-col items-center justify-between bg-white rounded-3xl shadow-2xl p-3'>
-            <Image src={dresscode} alt="icono DressCode" />
-            <h3 className='title sm:text-5xl xl:text-7xl'>Dress Code</h3>
+            <Image src={dresscode} alt="icono DressCode" className='w-24 sm:w-36'/>
+            <h3 className='title sm:text-3xl xl:text-5xl'>Dress Code</h3>
             <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold'>
               Formal
             </p>
           </div>
 
           <div className='flex flex-col items-center justify-between bg-white rounded-3xl shadow-2xl p-3'>
-            <Image src={instagram} alt="icono instagram" />
-            <h3 className='title sm:text-5xl xl:text-7xl'>Instagram</h3>
+            <Image src={instagram} alt="icono instagram" className='w-24 sm:w-36'/>
+            <h3 className='title sm:text-3xl xl:text-5xl'>Instagram</h3>
             <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold'>
               si publicás, etiquetanos!
             </p>
-            <Link href='https://www.instagram.com/boda.lucasyshei/' prefetch={false} target='blank'
-              className='text-blue-900 hover:text-blue-600 hover:font-bold'
+            <Link href='https://www.instagram.com/boda.sheiylucas/' prefetch={false} target='blank'
+              className='text-blue-900 hover:text-blue-600 hover:font-bold text-center text-sm sm:text-base xl:text-xl'
             >
               @boda.sheiylucas
             </Link>
           </div>
 
           <div className='flex flex-col items-center justify-between bg-white rounded-3xl shadow-2xl p-3'>
-            <Image src={canciones} alt="icono canciones" />
-            <h3 className='title sm:text-5xl xl:text-7xl'>Música</h3>
-            <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold'>
+            <Image src={canciones} alt="icono canciones" className='w-24 sm:w-36'/>
+            <h3 className='title sm:text-3xl xl:text-5xl'>Música</h3>
+            <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold '>
               Que canción no puede faltar?
             </p>
             <Link href='https://open.spotify.com/playlist/4oP2us5G2HtOasyEMBuWCV?si=458b079cbf904183' prefetch={false} target='blank'
-              className='text-blue-900 hover:text-blue-600 hover:font-bold'
+              className='text-blue-900 hover:text-blue-600 hover:font-bold text-center text-sm sm:text-base xl:text-xl'
             >
               agregala a spotify!
             </Link>
