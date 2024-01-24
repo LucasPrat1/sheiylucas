@@ -18,7 +18,8 @@ module.exports = {
       },
       fontFamily: {
         'cursive': 'var(--font-cursive)',
-        'roboto': 'var(--font-roboto)'
+        'roboto': 'var(--font-roboto)',
+        'roboto': 'var(--font-montserrat)',
       }
     },
   },

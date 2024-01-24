@@ -4,6 +4,7 @@
 
 body, main {
   width: 100%;
+  font-family: var(--font-montserrat);
 }
 
 .containerPortada {
@@ -34,7 +35,11 @@ body, main {
   font-family: var(--font-cursive);
   font-size: 2rem;
   line-height: 1.25;
-  text-shadow: 1px 1px 4px #00000060;
+  text-shadow: 1px 1px 4px #17255460;
+}
+
+#card, #tips {
+  background-image: url(../../public/img/fondo.png);
 }
 
 .containerSection {

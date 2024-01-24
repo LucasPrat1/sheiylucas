@@ -1,9 +1,9 @@
-import { Inter, Parisienne , Roboto} from 'next/font/google'
+import { Montserrat, Parisienne , Roboto} from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-montserrat',
   display: 'swap',
 })
 
@@ -28,7 +28,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${roboto.variable} ${parisienne.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${roboto.variable} ${parisienne.variable}`}>
       <body >{children}</body>
     </html>
   )
