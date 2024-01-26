@@ -23,9 +23,6 @@ module.exports = {
         'cursive': 'var(--font-cursive)',
         'roboto': 'var(--font-roboto)',
         'montserrat': 'var(--font-montserrat)',
-      },
-      animation: {
-        'ping-timer': 'ping 1s linear infinite',
       }
     },
   },

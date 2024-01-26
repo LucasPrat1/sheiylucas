@@ -1,23 +1,20 @@
 import Link from 'next/link'
 import Image from 'next/image'
-
 import Countdown from '@/app/components/Countdown/Countdown'
 import Gift from '@/app/components/Gift/Gift'
 import { Button, Carousel } from 'flowbite-react'
 
-import anillos from '../../public/img/icono-anillos.svg'
-import fiesta from '../../public/img/icono-fiesta.svg'
-import calendario from '../../public/img/icono-calendario.svg'
-import regalo from '../../public/img/icono-regalo.svg'
+import ceremonia from '@/assets/icons/icono-ceremonia.svg'
+import fiesta from '@/assets/icons/icono-fiesta.svg'
+import calendario from '@/assets/icons/icono-calendario.svg'
+import anillos from '@/assets/icons/icono-anillos.svg'
+import regalo from '@/assets/icons/icono-regalo.svg'
+import dresscode from '@/assets/icons/icono-dresscode.svg'
+import canciones from '@/assets/icons/icono-canciones.svg'
+import instagram from '@/assets/icons/icono-instagram.svg'
 
-import dresscode from '../../public/img/icono-dresscode.svg'
-import canciones from '../../public/img/icono-canciones.svg'
-import instagram from '../../public/img/icono-instagram.svg'
-
-import ceremonia from '../../public/img/icono-ceremonia.svg'
-
-
-import galeria1 from '../../public/img/origin.jpg'
+import logo from '@/assets/img/logo.webp'
+import galeria1 from '@/assets/img/portada.webp'
 // import galeria2 from '../../public/img/fondos-02.jpg'
 // import galeria3 from '../../public/img/fondos-03.jpg'
 // import galeria4 from '../../public/img/fondos-04.jpg'
@@ -28,8 +25,7 @@ export default function Home() {
   return (
     <main>
       <header>
-        <div className='containerPortada animate-fade' >
-          {/* <Image className='w-full min-w-256 h-screen' src={portada} alt="imagen de portada" priority /> */}
+        <div className='containerPortada animate-fade-down delay-200' >
           <h1 className='hidden'>Shei y Lucas</h1>
           <h2 className='hidden'>¡Nos Casamos!</h2>
         </div>
@@ -123,7 +119,7 @@ export default function Home() {
               si publicás, etiquetanos!
             </p>
             <Link href='https://www.instagram.com/boda.sheiylucas/' prefetch={false} target='blank'
-              className='text-blue-900 hover:text-blue-600 hover:font-bold text-center text-sm sm:text-base xl:text-xl'
+              className='text-blue-900 hover:text-blue-600 hover:font-bold transition-all text-center text-sm sm:text-base xl:text-xl'
             >
               @boda.sheiylucas
             </Link>
@@ -136,7 +132,7 @@ export default function Home() {
               Que canción no puede faltar?
             </p>
             <Link href='https://open.spotify.com/playlist/4oP2us5G2HtOasyEMBuWCV?si=458b079cbf904183' prefetch={false} target='blank'
-              className='text-blue-900 hover:text-blue-600 hover:font-bold text-center text-sm sm:text-base xl:text-xl'
+              className='text-blue-900 hover:text-blue-600 hover:font-bold transition-all text-center text-sm sm:text-base xl:text-xl'
             >
               agregala a spotify!
             </Link>
@@ -168,7 +164,31 @@ export default function Home() {
         <Gift />
       </section>
 
-
+      <footer id='gracias' className='containerSection p-6 bg-neutral-600 text-slate-200'>
+        <p className='text-center text-base sm:text-xl xl:text-2xl font-medium py-6'>
+          ¡Gracias por acompañarnos en este momento tan importante!
+        </p>
+        <div className='grid grid-cols-1 sm:grid-cols-2 w-full max-w-256 items-center justify-items-center gap-6'>
+          <Image src={logo} alt='icono logo' width={200} height={200} className=''></Image>
+          <ul className='text-center sm:text-left space-y-2 w-44 '>
+            <li className='hover:text-black hover:font-bold transition-all'>
+              <Link href={'#cards'}>Ceremonia</Link>
+            </li>
+            <li className='hover:text-black hover:font-bold transition-all'>
+              <Link href={'#cards'}>Fiesta</Link>
+            </li>
+            <li className='hover:text-black hover:font-bold transition-all'>
+              <Link href={'#asistencia'}>Confirmar Asistencia</Link>
+            </li>
+            <li className='hover:text-black hover:font-bold transition-all'>
+              <Link href={'#tips'}>Tips</Link>
+            </li>
+            <li className='hover:text-black hover:font-bold transition-all'>
+              <Link href={'#gift'}>Regalo</Link>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
   )
 }
