@@ -19,14 +19,6 @@ body, main {
   background-size: cover;
   background-position-x: center;
   background-position-y: top;
-
-  /* opacity: 80%; */
-}
-
-.textPortada {
-  text-align: center;
-  color: white;
-  font-family: var(--font-cursive);
 }
 
 .title {
@@ -49,3 +41,9 @@ body, main {
   justify-content: center;
   align-items: center;
 }
+
+.animate-view {
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
+}
+

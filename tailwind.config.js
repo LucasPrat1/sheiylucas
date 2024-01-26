@@ -16,14 +16,21 @@ module.exports = {
         '128': '32rem',
         '256': '64rem',
       },
+      height: {
+        '128': '32rem',
+      },
       fontFamily: {
         'cursive': 'var(--font-cursive)',
         'roboto': 'var(--font-roboto)',
-        'roboto': 'var(--font-montserrat)',
+        'montserrat': 'var(--font-montserrat)',
+      },
+      animation: {
+        'ping-timer': 'ping 1s linear infinite',
       }
     },
   },
   plugins: [
-    require("flowbite/plugin")
+    require("flowbite/plugin"),
+    require('tailwindcss-animated')
   ],
 }

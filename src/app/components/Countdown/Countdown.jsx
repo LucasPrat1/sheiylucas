@@ -1,6 +1,5 @@
 'use client'
 import { useState, useEffect } from 'react'
-import styles from './countdown.module.css'
 
 const Countdown = () => {
   const [days, setDays] = useState(0);
@@ -39,23 +38,23 @@ const Countdown = () => {
       {esHoy ? <p className={styles.falta}>¡Hoy es el gran día!</p>
         :
         <>
-          <p className={styles.falta}>Falta</p>
-          <div className={styles.reloj}>
-            <div className={styles.colReloj}>
-              <span className={styles.numReloj}>{days}</span>
-              <span className={styles.textReloj}>Días</span>
+          <p className='title sm:text-5xl xl:text-7xl'>Falta</p>
+          <div className='flex justify-around w-full max-w-128 mt-2'>
+            <div className='flex flex-col items-center'>
+              <span className='font-roboto font-bold leading-none text-sky-900 text-3xl sm:text-5xl xl:text-7xl animate-fade'>{days}</span>
+              <span className='font-roboto text-sky-950 text-sm sm:text-base xl:text-lg'>DÍAS</span>
             </div>
-            <div className={styles.colReloj}>
-              <span className={styles.numReloj}>{hours}</span>
-              <span className={styles.textReloj}>Horas</span>
+            <div className='flex flex-col items-center'>
+              <span className='font-roboto font-bold leading-none text-sky-900 text-3xl sm:text-5xl xl:text-7xl animate-fade'>{hours}</span>
+              <span className='font-roboto text-sky-950 text-sm sm:text-base xl:text-lg'>HORAS</span>
             </div>
-            <div className={styles.colReloj}>
-              <span className={styles.numReloj}>{minutes}</span>
-              <span className={styles.textReloj}>Minutos</span>
+            <div className='flex flex-col items-center'>
+              <span className='font-roboto font-bold leading-none text-sky-900 text-3xl sm:text-5xl xl:text-7xl animate-fade'>{minutes}</span>
+              <span className='font-roboto text-sky-950 text-sm sm:text-base xl:text-lg'>MINUTOS</span>
             </div>
-            <div className={styles.colReloj}>
-              <span className={styles.numReloj}>{seconds}</span>
-              <span className={styles.textReloj}>Segundos</span>
+            <div className='flex flex-col items-center'>
+              <span className='font-roboto font-bold leading-none text-sky-900 text-3xl sm:text-5xl xl:text-7xl animate-fade'>{seconds}</span>
+              <span className='font-roboto text-sky-950 text-sm sm:text-base xl:text-lg'>SEGUNDOS</span>
             </div>
           </div>
         </>
