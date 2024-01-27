@@ -37,7 +37,7 @@ export default function Home() {
 
       <section id='cards' className='w-full py-4 px-6 lg:px-16 grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-16'>
 
-        <div id='card' className='flex flex-col items-center bg-slate-200 rounded-xl ring-2 ring-slate-300 shadow-lg p-3 animate-fade-right animate-view'>
+        <div id='ceremonia' className='flex flex-col items-center bg-slate-200 rounded-xl ring-2 ring-slate-300 shadow-lg p-3 animate-fade-right animate-view'>
           <Image src={ceremonia} alt="icono anillos" className='transition-all' />
           <h3 className='title sm:text-5xl xl:text-7xl'>Ceremonia</h3>
           <p className='text-center text-sm sm:text-base xl:text-xl p-2'>
@@ -53,11 +53,11 @@ export default function Home() {
           <iframe className='hidden xl:block m-3 border-0' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d996.0022126920632!2d-60.69176489260913!3d-32.894499322877245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539df40c6e09%3A0x89006750506822f8!2sParroquia%20Sagrado%20Coraz%C3%B3n%20de%20Jes%C3%BAs!5e0!3m2!1ses-419!2sar!4v1705896921999!5m2!1ses-419!2sar" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div id='card' className='flex flex-col items-center bg-slate-200 rounded-xl ring-2 ring-slate-300 shadow-lg p-3 animate-fade-left animate-view'>
+        <div id='fiesta' className='flex flex-col items-center bg-slate-200 rounded-xl ring-2 ring-slate-300 shadow-lg p-3 animate-fade-left animate-view'>
           <Image src={fiesta} alt="icono fiesta" />
           <h3 className='title sm:text-5xl xl:text-7xl'>Fiesta</h3>
           <p className='text-center text-sm sm:text-base xl:text-xl p-2'>
-            <strong>05 de Abril a las  21:00 hs</strong>
+            <strong>05 de Abril a las  20:30 hs</strong>
             <br /> Salon Campos de Ibarlucea
             <br /> 25 de Mayo (Ruta 34s) 5306, Ibarlucea
           </p>
@@ -172,10 +172,10 @@ export default function Home() {
           <Image src={logo} alt='icono logo' width={200} height={200} className=''></Image>
           <ul className='text-center sm:text-left space-y-2 w-44 '>
             <li className='hover:text-black hover:font-bold transition-all'>
-              <Link href={'#cards'}>Ceremonia</Link>
+              <Link href={'#ceremonia'}>Ceremonia</Link>
             </li>
             <li className='hover:text-black hover:font-bold transition-all'>
-              <Link href={'#cards'}>Fiesta</Link>
+              <Link href={'#fiesta'}>Fiesta</Link>
             </li>
             <li className='hover:text-black hover:font-bold transition-all'>
               <Link href={'#asistencia'}>Confirmar Asistencia</Link>

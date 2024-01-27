@@ -34,7 +34,7 @@ a {
   text-shadow: 1px 1px 4px #17255460;
 }
 
-#card, #tips {
+#ceremonia, #fiesta, #tips {
   background-image: url(../assets/img/fondo1.webp);
 }
 
@@ -50,4 +50,3 @@ a {
   animation-timeline: view();
   animation-range: entry 10% cover 40%;
 }
-
