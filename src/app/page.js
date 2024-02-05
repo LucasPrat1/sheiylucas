@@ -14,12 +14,11 @@ import canciones from '@/assets/icons/icono-canciones.svg'
 import instagram from '@/assets/icons/icono-instagram.svg'
 
 import logo from '@/assets/img/logo.webp'
-import galeria1 from '@/assets/img/portada.webp'
-// import galeria2 from '../../public/img/fondos-02.jpg'
-// import galeria3 from '../../public/img/fondos-03.jpg'
-// import galeria4 from '../../public/img/fondos-04.jpg'
-
-
+import galeria1 from '@/assets/img/galeria1.webp'
+import galeria2 from '@/assets/img/galeria2.webp'
+import galeria3 from '@/assets/img/galeria3.webp'
+import galeria4 from '@/assets/img/galeria4.webp'
+import galeria5 from '@/assets/img/galeria5.webp'
 
 export default function Home() {
   return (
@@ -35,15 +34,19 @@ export default function Home() {
         <Countdown />
       </section>
 
-      <section id='cards' className='w-full py-4 px-6 lg:px-16 grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-16'>
+      <section id='cards' className='w-full pt-2 pb-6 sm:pb-10 px-6 lg:px-16 grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-16'>
 
-        <div id='ceremonia' className='flex flex-col items-center bg-slate-200 rounded-xl ring-2 ring-slate-300 shadow-lg p-3 animate-fade-right animate-view'>
+        <div id='ceremonia' className='flex flex-col items-center rounded-xl ring-2 ring-slate-600 shadow-xl p-3 animate-fade-right animate-view'>
           <Image src={ceremonia} alt="icono anillos" className='transition-all' />
           <h3 className='title sm:text-5xl xl:text-7xl'>Ceremonia</h3>
-          <p className='text-center text-sm sm:text-base xl:text-xl p-2'>
-            <strong>05 de Abril a las  19:00 hs</strong>
-            <br /> Parroquia Sagrado Corazon de Jesús
-            <br /> Agrelo y Puccio, Rosario
+          <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold'>
+            05 de Abril a las  19:00 hs
+          </p>
+          <p className='text-center text-sm sm:text-base xl:text-xl'>
+            Parroquia Sagrado Corazon de Jesús
+          </p>
+          <p className='text-center text-sm sm:text-base xl:text-xl'>
+            Agrelo y Puccio, Rosario
           </p>
           <Link href='https://maps.app.goo.gl/4q6VByKAfMqg7oe66' prefetch={false} target='blank'>
             <Button color="gray" pill className='block xl:hidden mt-3'>
@@ -53,13 +56,17 @@ export default function Home() {
           <iframe className='hidden xl:block m-3 border-0' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d996.0022126920632!2d-60.69176489260913!3d-32.894499322877245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539df40c6e09%3A0x89006750506822f8!2sParroquia%20Sagrado%20Coraz%C3%B3n%20de%20Jes%C3%BAs!5e0!3m2!1ses-419!2sar!4v1705896921999!5m2!1ses-419!2sar" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div id='fiesta' className='flex flex-col items-center bg-slate-200 rounded-xl ring-2 ring-slate-300 shadow-lg p-3 animate-fade-left animate-view'>
+        <div id='fiesta' className='flex flex-col items-center rounded-xl ring-2 ring-slate-600 shadow-xl p-3 animate-fade-left animate-view'>
           <Image src={fiesta} alt="icono fiesta" />
           <h3 className='title sm:text-5xl xl:text-7xl'>Fiesta</h3>
-          <p className='text-center text-sm sm:text-base xl:text-xl p-2'>
-            <strong>05 de Abril a las  20:30 hs</strong>
-            <br /> Salon Campos de Ibarlucea
-            <br /> 25 de Mayo (Ruta 34s) 5306, Ibarlucea
+          <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold'>
+            05 de Abril a las  20:30 hs
+          </p>
+          <p className='text-center text-sm sm:text-base xl:text-xl'>
+            Salon Campos de Ibarlucea
+          </p>
+          <p className='text-center text-sm sm:text-base xl:text-xl'>
+            25 de Mayo (Ruta 34s) 5306, Ibarlucea
           </p>
           <Link href='https://maps.app.goo.gl/5i5m8fM4NZaBnrk77' prefetch={false} target='blank'>
             <Button color="gray" pill className='block xl:hidden mt-3'>
@@ -71,13 +78,14 @@ export default function Home() {
 
       </section>
 
-      <section id='carrusel' className='sm:mx-6 lg:mx-16 sm:my-6  animate-fade animate-view'>
-        <div className="h-56 sm:h-64 lg:h-80 xl:h-96 2xl:h-128 bg-slate-900 sm:rounded-xl">
-          <Carousel>
-            <Image className='' src={galeria1} alt="galeria" />
-            {/* <Image className='w-full' src={galeria2} alt="galeria" />
-            <Image className='w-full' src={galeria3} alt="galeria" />
-            <Image className='w-full' src={galeria4} alt="galeria" /> */}
+      <section id='carrusel' className='py-5 lg:py-7 2xl:py-9 px-1 animate-fade animate-view bg-neutral-900'>
+        <div className="grid grid-cols-1 h-44 xs:h-56 sm:h-64 sm:grid-cols-7 md:h-72 lg:h-125 xl:h-128 xl:grid-cols-5 2xl:grid-cols-7">
+          <Carousel pauseOnHover className='sm:col-start-2 sm:col-span-5 xl:col-start-2 xl:col-span-3 2xl:col-start-3 2xl:col-span-3'>
+            <Image src={galeria1} alt="galeria1" />
+            <Image src={galeria2} alt="galeria2" />
+            <Image src={galeria3} alt="galeria3" />
+            <Image src={galeria4} alt="galeria4" />
+            <Image src={galeria5} alt="galeria5" />
           </Carousel>
         </div>
       </section>
@@ -104,7 +112,7 @@ export default function Home() {
 
         <div className='w-full p-6 grid grid-cols-1 sm:grid-cols-3 gap-6' >
 
-          <div className='flex flex-col items-center justify-between bg-white rounded-3xl shadow-2xl p-3 animate-fade-right animate-view'>
+          <div className='flex flex-col items-center justify-between bg-white rounded-3xl shadow-2xl p-3 animate-fade-right animate-view hover:shadow-inner transition-shadow duration-300'>
             <Image src={dresscode} alt="icono DressCode" className='w-24 sm:w-36' />
             <h3 className='title sm:text-3xl xl:text-5xl'>Dress Code</h3>
             <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold'>
@@ -112,7 +120,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='flex flex-col items-center justify-between bg-white rounded-3xl shadow-2xl p-3 animate-fade-up animate-view'>
+          <div className='flex flex-col items-center justify-between bg-white rounded-3xl shadow-2xl p-3 animate-fade-up animate-view hover:shadow-inner transition-shadow duration-300'>
             <Image src={instagram} alt="icono instagram" className='w-24 sm:w-36' />
             <h3 className='title sm:text-3xl xl:text-5xl'>Instagram</h3>
             <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold'>
@@ -125,7 +133,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className='flex flex-col items-center justify-between bg-white rounded-3xl shadow-2xl p-3 animate-fade-left animate-view'>
+          <div className='flex flex-col items-center justify-between bg-white rounded-3xl shadow-2xl p-3 animate-fade-left animate-view hover:shadow-inner transition-shadow duration-300'>
             <Image src={canciones} alt="icono canciones" className='w-24 sm:w-36' />
             <h3 className='title sm:text-3xl xl:text-5xl'>Música</h3>
             <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold '>
@@ -169,7 +177,7 @@ export default function Home() {
           ¡Gracias por acompañarnos en este momento tan importante!
         </p>
         <div className='grid grid-cols-1 sm:grid-cols-2 w-full max-w-256 items-center justify-items-center gap-6'>
-          <Image src={logo} alt='icono logo' width={200} height={200} className=''></Image>
+          <Image src={logo} alt='icono logo' width={200} height={200} />
           <ul className='text-center sm:text-left space-y-2 w-44 '>
             <li className='hover:text-black hover:font-bold transition-all'>
               <Link href={'#ceremonia'}>Ceremonia</Link>
