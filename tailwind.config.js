@@ -13,6 +13,7 @@ export const theme = {
   },
   extend: {
     maxWidth: {
+      '128': '32rem',
       '256': '64rem',
     },
     height: {
