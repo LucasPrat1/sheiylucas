@@ -38,7 +38,7 @@ const Countdown = () => {
       {esHoy ? <p className={styles.falta}>¡Hoy es el gran día!</p>
         :
         <>
-          <p className='title sm:text-5xl xl:text-7xl'>Falta</p>
+          <p className='title text-3xl sm:text-5xl xl:text-7xl'>Faltan</p>
           <div className='flex justify-around w-full max-w-128 mt-2'>
             <div className='flex flex-col items-center'>
               <span className='font-roboto font-bold leading-none text-sky-900 text-3xl sm:text-5xl xl:text-7xl animate-fade'>{days}</span>

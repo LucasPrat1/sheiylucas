@@ -29,9 +29,9 @@ a {
   text-align: center;
   color: #020617;
   font-family: var(--font-cursive);
-  font-size: 2rem;
+  /* font-size: 2rem; */
   line-height: 1.25;
-  text-shadow: 1px 1px 4px #17255460;
+  text-shadow: 1px 1px 4px #0c4a6e;
 }
 
 #ceremonia, #fiesta, #tips {

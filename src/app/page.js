@@ -38,42 +38,42 @@ export default function Home() {
 
         <div id='ceremonia' className='flex flex-col items-center rounded-xl ring-2 ring-slate-600 shadow-xl p-3 animate-fade-right animate-view'>
           <Image src={ceremonia} alt="icono anillos" className='transition-all' />
-          <h3 className='title sm:text-5xl xl:text-7xl'>Ceremonia</h3>
+          <h3 className='title text-3xl sm:text-5xl xl:text-7xl'>Ceremonia</h3>
           <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold'>
-            05 de Abril a las  19:00 hs
+            05 de Abril a las  19:15 hs
           </p>
-          <p className='text-center text-sm sm:text-base xl:text-xl'>
-            Parroquia Sagrado Corazon de Jesús
+          <p className='text-center text-sm sm:text-base xl:text-xl italic font-medium'>
+            Parroquia Sagrado Corazón de Jesús
           </p>
           <p className='text-center text-sm sm:text-base xl:text-xl'>
             Agrelo y Puccio, Rosario
           </p>
           <Link href='https://maps.app.goo.gl/4q6VByKAfMqg7oe66' prefetch={false} target='blank'>
-            <Button color="gray" pill className='block xl:hidden mt-3'>
+            <Button color="gray" pill className='block xl:hidden mt-3 shadow-md'>
               Como llegar
             </Button>
           </Link>
-          <iframe className='hidden xl:block m-3 border-0' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d996.0022126920632!2d-60.69176489260913!3d-32.894499322877245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539df40c6e09%3A0x89006750506822f8!2sParroquia%20Sagrado%20Coraz%C3%B3n%20de%20Jes%C3%BAs!5e0!3m2!1ses-419!2sar!4v1705896921999!5m2!1ses-419!2sar" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe className='hidden xl:block m-3 border-0' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d996.0022126920632!2d-60.69176489260913!3d-32.894499322877245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539df40c6e09%3A0x89006750506822f8!2sParroquia%20Sagrado%20Coraz%C3%B3n%20de%20Jes%C3%BAs!5e0!3m2!1ses-419!2sar!4v1705896921999!5m2!1ses-419!2sar" width="400" height="300" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div id='fiesta' className='flex flex-col items-center rounded-xl ring-2 ring-slate-600 shadow-xl p-3 animate-fade-left animate-view'>
           <Image src={fiesta} alt="icono fiesta" />
-          <h3 className='title sm:text-5xl xl:text-7xl'>Fiesta</h3>
+          <h3 className='title text-3xl sm:text-5xl xl:text-7xl'>Fiesta</h3>
           <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold'>
             05 de Abril a las  20:30 hs
           </p>
-          <p className='text-center text-sm sm:text-base xl:text-xl'>
-            Salon Campos de Ibarlucea
+          <p className='text-center text-sm sm:text-base xl:text-xl italic font-medium'>
+            Salón Campos de Ibarlucea
           </p>
           <p className='text-center text-sm sm:text-base xl:text-xl'>
             25 de Mayo (Ruta 34s) 5306, Ibarlucea
           </p>
           <Link href='https://maps.app.goo.gl/5i5m8fM4NZaBnrk77' prefetch={false} target='blank'>
-            <Button color="gray" pill className='block xl:hidden mt-3'>
+            <Button  color='gray' pill className='block xl:hidden mt-3 shadow-md'>
               Como llegar
             </Button>
           </Link>
-          <iframe className='hidden xl:block m-3 border-0' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7971.807768906182!2d-60.76614590963856!3d-32.85233926286167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b651e73eac728b%3A0x96d38fa9f42ccf70!2sCampos%20de%20Ibarlucea.!5e0!3m2!1ses-419!2sar!4v1705896727917!5m2!1ses-419!2sar" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe className='hidden xl:block m-3 border-0' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7971.807768906182!2d-60.76614590963856!3d-32.85233926286167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b651e73eac728b%3A0x96d38fa9f42ccf70!2sCampos%20de%20Ibarlucea.!5e0!3m2!1ses-419!2sar!4v1705896727917!5m2!1ses-419!2sar" width="400" height="300" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
       </section>
@@ -92,7 +92,7 @@ export default function Home() {
 
       <section id='asistencia' className='containerSection px-6 pb-6 bg-slate-300 shadow-inner  animate-fade animate-view'>
         <Image src={calendario} alt="icono calendario" />
-        <h3 className='title sm:text-5xl xl:text-7xl'>Confirmanos tu asistencia</h3>
+        <h3 className='title text-3xl sm:text-5xl xl:text-7xl'>Confirmanos tu asistencia</h3>
         <p className='text-center text-base sm:text-xl xl:text-2xl p-2 mb-2' >
           Queremos celebrar junto a vos este momento tan especial para nosotros...
         </p>
@@ -105,7 +105,7 @@ export default function Home() {
 
 
       <section id='tips' className='containerSection p-6 bg-slate-300  animate-fade animate-view'>
-        <h3 className='title sm:text-5xl xl:text-7xl'>¡Fiesta!</h3>
+        <h3 className='title text-3xl sm:text-5xl xl:text-7xl'>¡Fiesta!</h3>
         <p className='text-center text-base sm:text-xl xl:text-2xl p-2' >
           Hagamos juntos una fiesta inolvidable. Te dejamos algunos tips
         </p>
@@ -114,20 +114,20 @@ export default function Home() {
 
           <div className='flex flex-col items-center justify-between bg-white rounded-3xl shadow-2xl p-3 animate-fade-right animate-view hover:shadow-inner transition-shadow duration-300'>
             <Image src={dresscode} alt="icono DressCode" className='w-24 sm:w-36' />
-            <h3 className='title sm:text-3xl xl:text-5xl'>Dress Code</h3>
-            <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold'>
+            <h3 className='title text-xl sm:text-3xl xl:text-5xl'>Dress Code</h3>
+            <p className='text-center text-base sm:text-lg xl:text-2xl p-2 font-bold text-sky-600'>
               Formal
             </p>
           </div>
 
           <div className='flex flex-col items-center justify-between bg-white rounded-3xl shadow-2xl p-3 animate-fade-up animate-view hover:shadow-inner transition-shadow duration-300'>
             <Image src={instagram} alt="icono instagram" className='w-24 sm:w-36' />
-            <h3 className='title sm:text-3xl xl:text-5xl'>Instagram</h3>
-            <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold'>
-              si publicás, etiquetanos!
+            <h3 className='title text-xl sm:text-3xl xl:text-5xl'>Instagram</h3>
+            <p className='text-center text-sm sm:text-base xl:text-xl p-2'>
+              ¡Si publicás, etiquetanos!
             </p>
             <Link href='https://www.instagram.com/boda.sheiylucas/' prefetch={false} target='blank'
-              className='text-blue-900 hover:text-blue-600 hover:font-bold transition-all text-center text-sm sm:text-base xl:text-xl'
+              className='text-sky-600 hover:text-sky-800 hover:tracking-wide font-bold transition-all text-center text-base sm:text-lg xl:text-2xl'
             >
               @boda.sheiylucas
             </Link>
@@ -135,14 +135,14 @@ export default function Home() {
 
           <div className='flex flex-col items-center justify-between bg-white rounded-3xl shadow-2xl p-3 animate-fade-left animate-view hover:shadow-inner transition-shadow duration-300'>
             <Image src={canciones} alt="icono canciones" className='w-24 sm:w-36' />
-            <h3 className='title sm:text-3xl xl:text-5xl'>Música</h3>
-            <p className='text-center text-sm sm:text-base xl:text-xl p-2 font-bold '>
-              Que canción no puede faltar?
+            <h3 className='title text-xl sm:text-3xl xl:text-5xl'>Música</h3>
+            <p className='text-center text-sm sm:text-base xl:text-xl p-2'>
+              ¿Que canción no puede faltar?
             </p>
             <Link href='https://open.spotify.com/playlist/4oP2us5G2HtOasyEMBuWCV?si=458b079cbf904183' prefetch={false} target='blank'
-              className='text-blue-900 hover:text-blue-600 hover:font-bold transition-all text-center text-sm sm:text-base xl:text-xl'
+              className='text-sky-600 hover:text-sky-800 hover:tracking-wide font-bold transition-all text-center text-base sm:text-lg xl:text-2xl'
             >
-              agregala a spotify!
+              Agregala a spotify!
             </Link>
           </div>
 
@@ -152,7 +152,7 @@ export default function Home() {
       <section id='misa' className='containerSection px-6 pb-10 shadow-inner animate-fade animate-view'>
         <Image src={anillos} alt="icono calendario" />
         <p className='text-center text-base sm:text-xl xl:text-2xl ' >
-          Proximamente acá podrás encontrar las canciones y lecturas de la ceremonia...
+          Próximamente acá podrás encontrar las canciones y lecturas de la ceremonia...
         </p>
         {/* <Link href='https://forms.gle/ksuf719Jq9Zj7ifb7' prefetch={false} target='blank'>
           <Button color="dark" size='xl' pill className='w-36 md:w-52 2lg:w-64'>
@@ -167,7 +167,7 @@ export default function Home() {
           ¡El mejor regalo es tu presencia!
         </p>
         <p className='text-center text-sm sm:text-base xl:text-xl font-light pt-2'>
-          Pero si deseás hacernos otro regalo, podes ayudarnos con nuestra fiesta...
+          Pero si deseás hacernos otro regalo, podés ayudarnos con nuestra fiesta...
         </p>
         <Gift />
       </section>
