@@ -86,7 +86,7 @@ export default function Home() {
         <p className='text-center text-sm sm:text-lg xl:text-xl ' >
           San Agustin
         </p>
-        <Link href='https://docs.google.com/document/d/1Y5sWwdNLaa6pKGwGdkAGOKZYo2tKWA6CWbJyXkNY_bg/edit?usp=sharing' prefetch={false} target='blank'>
+        <Link href='https://drive.google.com/file/d/1-7L7LtiFEivnLYBd2zefnbIyCNk4P-YU/view?usp=sharing' prefetch={false} target='blank'>
           <Button color="gray" size='xl' pill className='mt-6 w-36 md:w-52 2lg:w-64'>
             Cancionero
           </Button>
