@@ -35,7 +35,7 @@ const Countdown = () => {
 
   return (
     <>
-      {esHoy ? <p className={styles.falta}>¡Hoy es el gran día!</p>
+      {esHoy ? <p className='font-roboto font-bold leading-none text-sky-900 text-3xl sm:text-5xl xl:text-7xl animate-fade'>¡Hoy es el gran día!</p>
         :
         <>
           <p className='title text-3xl sm:text-5xl xl:text-7xl'>Faltan</p>
